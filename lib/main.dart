@@ -18,8 +18,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
         //primaryTextTheme: GoogleFonts.latoTextTheme()
       ),
-      //debugShowCheckedModeBanner: false, for erase the debugs icon
-      initialRoute: "/login",
+      debugShowCheckedModeBanner: false, //for erase the debugs icon
+      initialRoute: "/home",
       darkTheme: ThemeData(primarySwatch: Colors.green),
       routes: {
         "/": (context) => LoginPage(),
