@@ -4,9 +4,9 @@ class Model {
   static final items = [
     Item(
       id: 1,
-      name: "Iphone 12",
+      name: "Iphone 12pro",
       desc: "Apple iphone 12th generation ",
-      price: 55000,
+      price: 999,
       color: "Black",
       image: "assets/images/iphone12.jpeg",
     )
