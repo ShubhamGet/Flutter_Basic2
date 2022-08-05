@@ -1,5 +1,20 @@
+import 'package:flutter/material.dart';
+
+class Model {
+  static final items = [
+    Item(
+      id: 1,
+      name: "Iphone 12",
+      desc: "Apple iphone 12th generation ",
+      price: 55000,
+      color: "Black",
+      image: "assets/images/iphone12.jpeg",
+    )
+  ];
+}
+
 class Item {
-  final String id;
+  final int id;
   final String name;
   final String desc;
   final num price;
@@ -14,13 +29,3 @@ class Item {
       required this.color,
       required this.image});
 }
-
-final products = [
-  Item(
-      id: "Shubham 01",
-      name: "Iphone 12",
-      desc: "Apple iphone 12th generation ",
-      price: 55000,
-      color: "Black",
-      image: "")
-];
