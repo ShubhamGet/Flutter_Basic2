@@ -10,35 +10,35 @@
         },
         {
             "id": 2,
-            "name": "Pixel5",
-            "desc": "jdfjhf",
-            "price": 999,
-            "color": "black",
-            "image": ""
+            "name": "Iphone XR",
+            "desc": "Apple iphone 12th generation ",
+            "price": 888,
+            "color": "Red",
+            "image": "assets/images/iPhone_XR.jpeg"
         },
         {
             "id": 3,
-            "name": "Pixel5",
-            "desc": "jdfjhf",
-            "price": 999,
-            "color": "black",
-            "image": ""
+            "name": "MacBookAir M1",
+            "desc": "MacBookAir M1 with Apple Silicon generation",
+            "price": 1500,
+            "color": "Black",
+            "image": "assets/images/mackbookAirM1.jpeg"
         },
         {
             "id": 4,
-            "name": "Pixel5",
-            "desc": "jdfjhf",
-            "price": 999,
-            "color": "black",
-            "image": ""
+            "name": "MacBookAir Pro",
+            "desc": "MacBookAir Pro also with Apple Silicon genertion ",
+            "price": 1600,
+            "color": "Grey",
+            "image": "assets/images/mackbookPro.jpeg"
         },
         {
             "id": 5,
-            "name": "Pixel5",
-            "desc": "jdfjhf",
-            "price": 999,
-            "color": "black",
-            "image": ""
+            "name": "Apple AirPods",
+            "desc": "Apple Incorporation, generation",
+            "price": 400,
+            "color": "Black",
+            "image": "assets/images/appleAirpods.jpeg"
         }
     ]
 }
