@@ -1,0 +1,44 @@
+{
+    "product": [
+        {
+            "id": 1,
+            "name": "Iphone 12pro",
+            "desc": "Apple iphone 12th generation ",
+            "price": 999,
+            "color": "Black",
+            "image": "assets/images/iphone12.jpeg"
+        },
+        {
+            "id": 2,
+            "name": "Pixel5",
+            "desc": "jdfjhf",
+            "price": 999,
+            "color": "black",
+            "image": ""
+        },
+        {
+            "id": 3,
+            "name": "Pixel5",
+            "desc": "jdfjhf",
+            "price": 999,
+            "color": "black",
+            "image": ""
+        },
+        {
+            "id": 4,
+            "name": "Pixel5",
+            "desc": "jdfjhf",
+            "price": 999,
+            "color": "black",
+            "image": ""
+        },
+        {
+            "id": 5,
+            "name": "Pixel5",
+            "desc": "jdfjhf",
+            "price": 999,
+            "color": "black",
+            "image": ""
+        }
+    ]
+}
