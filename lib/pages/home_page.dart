@@ -142,19 +142,22 @@ class ModelItem extends StatelessWidget {
           children: [
             model.name.text.lg.color(MyTheme.darkBluishColor).make(),
             model.desc.text.textStyle(context.captionStyle).make(),
+            10.heightBox,
             ButtonBar(
               alignment: MainAxisAlignment.spaceBetween,
-              buttonPadding: Vx.mOnly(right: 25),
+              buttonPadding: EdgeInsets.zero,
               children: [
                 "\$${model.price}".text.bold.xl.make(),
                 ElevatedButton(
                     onPressed: () {},
                     style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(MyTheme.darkBluishColor)),
+                        backgroundColor: MaterialStateProperty.all(
+                          MyTheme.darkBluishColor,
+                        ),
+                        shape: MaterialStateProperty.all(StadiumBorder())),
                     child: "Buy".text.make())
               ],
-            )
+            ).pOnly(right: 9)
           ],
         ))
       ],
