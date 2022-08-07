@@ -1,4 +1,4 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
+// ignore_for_file: public_member_api_docs, sort_constructors_first, prefer_const_constructors
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -44,14 +44,13 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
+        // ignore: unnecessary_null_comparison
         child: (Model.items != null && Model.items.isNotEmpty)
             ? ListView.builder(
                 itemCount: Model.items.length,
-                itemBuilder: (context, index) {
-                  return ItemWidget(
-                    item: Model.items[index],
-                  );
-                },
+                itemBuilder: (context, index) => ItemWidget(
+                  item: Model.items[index],
+                ),
               )
             : Center(
                 child: CircularProgressIndicator(),

@@ -39,6 +39,22 @@
             "price": 400,
             "color": "Black",
             "image": "assets/images/appleAirpods.jpeg"
+        },
+        {
+            "id": 6,
+            "name": "Apple Ipad",
+            "desc": "Apple Ipad with Second generation",
+            "price": 700,
+            "color": "Rose Gold",
+            "image": "assets/images/Apple_ipad.jpeg"
+        },
+        {
+            "id": 7,
+            "name": "Apple Mouse",
+            "desc": "New generation",
+            "price": 200,
+            "color": "Rose Gold",
+            "image": "assets/images/mouse.jpeg"
         }
     ]
 }
