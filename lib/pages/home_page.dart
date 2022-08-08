@@ -5,11 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'package:flutter_basic_concept/models/shubham.dart';
+import 'package:flutter_basic_concept/widgets/home_widgets/model_header.dart';
 import 'package:flutter_basic_concept/widgets/theme.dart';
-
-import '../widgets/drawer.dart';
-import '../widgets/item_widget.dart';
 import 'package:velocity_x/velocity_x.dart';
+
+import '../widgets/home_widgets/model_list.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -52,9 +52,7 @@ class _HomePageState extends State<HomePage> {
               if (Model.items != null && Model.items.isNotEmpty)
                 ModelList().expand()
               else
-                Center(
-                  child: CircularProgressIndicator(),
-                )
+                CircularProgressIndicator().centered().expand(),
             ],
           ),
         ),
@@ -84,103 +82,5 @@ class _HomePageState extends State<HomePage> {
       ),
       drawer: MyDrawer(),
     );*/
-  }
-}
-
-// this is for header formating
-class ModelHeader extends StatelessWidget {
-  ModelHeader({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        "Iphone Product".text.bold.xl3.color(MyTheme.darkBluishColor).make(),
-      ],
-    );
-  }
-}
-
-// this is for Model List formating
-
-class ModelList extends StatelessWidget {
-  const ModelList({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: Model.items.length,
-      itemBuilder: (context, index) {
-        final model = Model.items[index];
-        return ModelItem(model: model);
-      },
-    );
-  }
-}
-
-// this is for ModelItem widget formating
-
-class ModelItem extends StatelessWidget {
-  final Item model;
-
-  const ModelItem({super.key, required this.model}) : assert(model != null);
-
-  @override
-  Widget build(BuildContext context) {
-    return VxBox(
-        child: Row(
-      children: [
-        ModelImage(
-          image: model.image,
-        ),
-        Expanded(
-            child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            model.name.text.lg.color(MyTheme.darkBluishColor).make(),
-            model.desc.text.textStyle(context.captionStyle).make(),
-            10.heightBox,
-            ButtonBar(
-              alignment: MainAxisAlignment.spaceBetween,
-              buttonPadding: EdgeInsets.zero,
-              children: [
-                "\$${model.price}".text.bold.xl.make(),
-                ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                        backgroundColor: MaterialStateProperty.all(
-                          MyTheme.darkBluishColor,
-                        ),
-                        shape: MaterialStateProperty.all(StadiumBorder())),
-                    child: "Buy".text.make())
-              ],
-            ).pOnly(right: 9)
-          ],
-        ))
-      ],
-    )).white.rounded.square(150).make().py16();
-  }
-}
-
-// this is for model Image
-
-class ModelImage extends StatelessWidget {
-  final String image;
-
-  const ModelImage({super.key, required this.image});
-
-  @override
-  Widget build(BuildContext context) {
-    return Image.asset(image)
-        .box
-        .rounded
-        .p8
-        .color(MyTheme.creamColor)
-        .make()
-        .p16()
-        .w40(context);
   }
 }
